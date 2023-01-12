@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include vaspl_repair_management *.css
+recursive-include vaspl_repair_management *.csv
+recursive-include vaspl_repair_management *.html
+recursive-include vaspl_repair_management *.ico
+recursive-include vaspl_repair_management *.js
+recursive-include vaspl_repair_management *.json
+recursive-include vaspl_repair_management *.md
+recursive-include vaspl_repair_management *.png
+recursive-include vaspl_repair_management *.py
+recursive-include vaspl_repair_management *.svg
+recursive-include vaspl_repair_management *.txt
+recursive-exclude vaspl_repair_management *.pyc
