@@ -1,0 +1,192 @@
+{
+ "actions": [],
+ "autoname": "format:CA-{DD}-{MM}-{YYYY}-{####}",
+ "creation": "2023-01-20 16:32:57.469716",
+ "default_view": "List",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "company",
+  "get_items_from",
+  "column_break1",
+  "posting_date",
+  "section_break_22",
+  "work_order",
+  "section_break_9",
+  "car_145_a50_release",
+  "detail",
+  "section_break_11",
+  "remarks",
+  "section_break_13",
+  "certificate_approval_ref_no",
+  "section_break_15",
+  "name1",
+  "column_break_17",
+  "date",
+  "section_break_24",
+  "text_editor_20",
+  "section_break_21",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "CA-",
+   "print_hide": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "depends_on": "aaa",
+   "fieldname": "get_items_from",
+   "fieldtype": "Select",
+   "label": "Get Items From",
+   "options": "\nWork Order\nSales Order"
+  },
+  {
+   "fieldname": "column_break1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Posting Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_22",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "work_order",
+   "fieldtype": "Table",
+   "label": "Work Order",
+   "options": "Child of CA Form"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "bold": 1,
+   "default": "0",
+   "description": "Other regulations on specified service in block 12 certify that unless otherwise specified in block 12, the work identified in block 11 and described in block 12, was accomplished in accordance with CAR 145 and with respect to that work the items are considered ready for release to services.",
+   "fieldname": "car_145_a50_release",
+   "fieldtype": "Check",
+   "label": "CAR 145, A.50 Release ",
+   "reqd": 1
+  },
+  {
+   "default": "Other regulations on specified service in block 12 certify that unless otherwise specified in block 12, the work identified in block 11 and described in block 12, was accomplished in accordance with CAR 145 and with respect to that work the items are considered ready for release to service.",
+   "depends_on": "car_145_a50_release",
+   "fieldname": "detail",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Detail"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Select",
+   "label": "Remarks",
+   "options": "\nREPAIR/FABRICATION CONFORM TO FAR 25.853 APPENDIX F PART I\nDRY CLEANING CARRIED OUT AS PER APPROVED PROCEDURE SHEET FOUND SATISFACTORY.\nPAINTING/POLISHING CARRIED OUT AS PER APPROVED P.S FOUND SATISFACTORY.\nREPAIR CARRIED OUT AS PER APPROVED PROCEDURE SHEET FOUND SATISFACTORY\nTSO LABELING DONE\nREPAIR WORK CARRIED OUT AS PER CMM 25-23-01, DATED 04/DEC 2008\nREPAIR WORK CARRIED OUT AS PER CMM 25-22-53, DATED:19/OCT/2018\nREPAIR WORK CARRIED OUT AS PER CMM 25-23-54, DATED:20/FEB/2009\nREPAIR WORK CARRIED OUT AS PER CMM 25-26-60, REV. B. DATED 26/JUL/2010"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "certificate_approval_ref_no",
+   "fieldtype": "Select",
+   "label": "Certificate /Approval Ref No",
+   "options": "\nVASPL/F-APP/1025",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Link",
+   "label": "Name",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_24",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "THIS CERTIFICATE DOES NOT AUTOMATICALLY CONSTITUTE AUTHORITY TO INSTALL. WHERE THE USER/INSTALLER PERFORMS WORK IN ACCORDANCE WITH REGULATIONS OF AN AIRWORTHINESS AUTHORITY DIFFERENT THAN THE AIRWORTHINESS AUTHORITY SPECIFIED IN BLOCK 1, IT IS ESSENTIAL THAT THE USER/INSTALLER ENSURES THAT HIS/HER AIRWORTHINESS AUTHORITY ACCEPTS ITEMS FROM THE AIRWORTHINESS AUTHORITY SPECIFIED IN BLOCK 1. STATEMENTS IN BLOCKS 13A AND 14A DO NOT CONSTITUTE INSTALLATION CERTIFICATION. IN ALL CASES AIRCRAFT MAINTENANCE RECORDS MUST CONTAIN AN INSTALLATION CERTIFICATION ISSUED IN ACCORDANCE WITH THE NATIONAL REGULATIONS BY THE USER/INSTALLER BEFORE THE AIRCRAFT MAY BE FLOWN.",
+   "fieldname": "text_editor_20",
+   "fieldtype": "Text",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_21",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "CA Form",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "icon": "fa fa-calendar",
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-03-21 18:29:43.404428",
+ "modified_by": "Administrator",
+ "module": "Repair Management",
+ "name": "CA Form",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Manufacturing User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "ASC",
+ "states": []
+}

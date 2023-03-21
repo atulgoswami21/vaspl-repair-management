@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-01-25 14:16:06.459899",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "work_order",
+  "date",
+  "part_no",
+  "qty",
+  "serial_no_batch_no",
+  "status_work"
+ ],
+ "fields": [
+  {
+   "fieldname": "work_order",
+   "fieldtype": "Link",
+   "label": "Work Order",
+   "options": "Work Order"
+  },
+  {
+   "fetch_from": "work_order.planned_start_date",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fetch_from": "work_order.item_name",
+   "fieldname": "part_no",
+   "fieldtype": "Data",
+   "label": "Part No"
+  },
+  {
+   "fetch_from": "work_order.qty",
+   "fetch_if_empty": 1,
+   "fieldname": "qty",
+   "fieldtype": "Data",
+   "label": "Qty"
+  },
+  {
+   "fieldname": "serial_no_batch_no",
+   "fieldtype": "Data",
+   "label": "Serial No/ Batch No"
+  },
+  {
+   "fieldname": "status_work",
+   "fieldtype": "Select",
+   "label": "Status Work",
+   "options": "\nREPAIR / FABRICATION"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-21 18:29:44.042640",
+ "modified_by": "Administrator",
+ "module": "Repair Management",
+ "name": "Child of CA Form",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

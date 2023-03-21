@@ -1,0 +1,160 @@
+{
+ "_comments": "[{\"comment\": \"<div class=\\\"ql-editor read-mode\\\"><p>hii there</p></div>\", \"by\": \"admin@example.com\", \"name\": \"b57b38ef82\"}, {\"comment\": \"<div class=\\\"ql-editor read-mode\\\"><p><br></p><p>---</p><p><br></p><p> &nbsp;\\tOn 27th December 2022...\", \"by\": \"admin@example.com\", \"name\": \"938fbc113b\"}, {\"comment\": \"<div class=\\\"ql-editor read-mode\\\"><p><br></p></div>\", \"by\": \"admin@example.com\", \"name\": \"8969d78e5b\"}]",
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:TestDefault-####",
+ "creation": "2022-12-26 16:47:45.247988",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "progress",
+  "naming_series",
+  "meeting_details_section",
+  "column_break_2",
+  "date",
+  "time",
+  "location",
+  "column_break_5",
+  "number",
+  "meeting_lead",
+  "group_photo",
+  "attendence_section",
+  "column_break_11",
+  "attendees",
+  "column_break_13",
+  "absentees",
+  "item_and_discussion",
+  "link_12",
+  "repeat_this",
+  "repeat_on"
+ ],
+ "fields": [
+  {
+   "fieldname": "progress",
+   "fieldtype": "Float",
+   "label": "Progress"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "\nSM-D-.####\nV-D-.####"
+  },
+  {
+   "fieldname": "meeting_details_section",
+   "fieldtype": "Section Break",
+   "label": "Meeting Details"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Datetime",
+   "label": "Time"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "number",
+   "fieldtype": "Data",
+   "label": "Number"
+  },
+  {
+   "fieldname": "meeting_lead",
+   "fieldtype": "Data",
+   "label": "Meeting Lead"
+  },
+  {
+   "fieldname": "group_photo",
+   "fieldtype": "Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "attendence_section",
+   "fieldtype": "Section Break",
+   "label": "Attendence"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "attendees",
+   "fieldtype": "Data",
+   "label": "Attendees"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "absentees",
+   "fieldtype": "Data",
+   "label": "Absentees"
+  },
+  {
+   "fieldname": "item_and_discussion",
+   "fieldtype": "Section Break",
+   "label": "Item and Discussion"
+  },
+  {
+   "fieldname": "link_12",
+   "fieldtype": "Table",
+   "options": "Child of Safety Meeting"
+  },
+  {
+   "fieldname": "repeat_this",
+   "fieldtype": "Image",
+   "label": "Repeat this event ",
+   "options": "/private/files/Moz.png"
+  },
+  {
+   "depends_on": "repeat_this",
+   "fieldname": "repeat_on",
+   "fieldtype": "Data",
+   "label": "Repeat On"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-21 18:29:39.049639",
+ "modified_by": "Administrator",
+ "module": "Repair Management",
+ "name": "Safety Meeting",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
