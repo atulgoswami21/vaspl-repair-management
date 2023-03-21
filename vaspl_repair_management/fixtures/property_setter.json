@@ -5582,5 +5582,37 @@
   "property_type": "Check",
   "row_name": null,
   "value": "1"
+ },
+ {
+  "default_value": null,
+  "doc_type": "DocType",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "module",
+  "is_system_generated": 1,
+  "modified": "2023-03-21 17:07:53.883366",
+  "module": null,
+  "name": "DocType-module-in_list_view",
+  "property": "in_list_view",
+  "property_type": "Check",
+  "row_name": null,
+  "value": "1"
+ },
+ {
+  "default_value": null,
+  "doc_type": "DocType",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "custom",
+  "is_system_generated": 1,
+  "modified": "2023-03-21 17:07:53.835381",
+  "module": null,
+  "name": "DocType-custom-in_list_view",
+  "property": "in_list_view",
+  "property_type": "Check",
+  "row_name": null,
+  "value": "1"
  }
 ]
