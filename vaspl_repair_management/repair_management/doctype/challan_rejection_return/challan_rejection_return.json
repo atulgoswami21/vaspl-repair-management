@@ -1,0 +1,173 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:CRR-{DD}-{MM}-{YYYY}-{####}",
+ "creation": "2023-01-30 15:13:30.019744",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "rn_no",
+  "part_no",
+  "date",
+  "column_break_4",
+  "repair_order_ext",
+  "party_gdn_details",
+  "party_gdn_date",
+  "section_break_7",
+  "challan_table",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "rn_no",
+   "fieldtype": "Link",
+   "label": "RN No",
+   "options": "Repair Note 1"
+  },
+  {
+   "fetch_from": "rn_no.party_name",
+   "fieldname": "part_no",
+   "fieldtype": "Data",
+   "label": "Party Name"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Data",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "rn_no.repair_order_ext_detail",
+   "fieldname": "repair_order_ext",
+   "fieldtype": "Data",
+   "label": "Repair Order (Ext) Details"
+  },
+  {
+   "fetch_from": "rn_no.party_gdn_date",
+   "fieldname": "party_gdn_details",
+   "fieldtype": "Data",
+   "label": "Party GDN Details"
+  },
+  {
+   "fetch_from": "rn_no.party_gdn_date",
+   "fieldname": "party_gdn_date",
+   "fieldtype": "Data",
+   "label": "Party GDN Date"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "challan_table",
+   "fieldtype": "Table",
+   "options": "Child of challan- Rejection-Return"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Challan-Rejection-Return",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-03-21 17:20:06.084576",
+ "modified_by": "Administrator",
+ "module": "Repair Management",
+ "name": "Challan-Rejection-Return",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Executive",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Store Head",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock User",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

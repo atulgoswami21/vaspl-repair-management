@@ -1,0 +1,37 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-02-02 12:54:33.608075",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "isopropyl_alcohol",
+  "list_of_machineequipments_required"
+ ],
+ "fields": [
+  {
+   "fieldname": "isopropyl_alcohol",
+   "fieldtype": "Data",
+   "label": "List Of Material Required"
+  },
+  {
+   "fieldname": "list_of_machineequipments_required",
+   "fieldtype": "Data",
+   "label": "List of Machine/Equipment's Required "
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-21 17:20:09.675338",
+ "modified_by": "Administrator",
+ "module": "Repair Management",
+ "name": "Child of procedure sheet for material required",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

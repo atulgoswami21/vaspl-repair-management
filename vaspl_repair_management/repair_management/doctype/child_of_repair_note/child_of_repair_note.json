@@ -1,0 +1,97 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-01-03 12:25:56.729862",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "partno",
+  "item_name__description",
+  "serial_no",
+  "qty",
+  "uom",
+  "ro_ext_details",
+  "ro_ext_date",
+  "price",
+  "remarks",
+  "capability_list"
+ ],
+ "fields": [
+  {
+   "fieldname": "partno",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "PART No",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "partno.item_name",
+   "fieldname": "item_name__description",
+   "fieldtype": "Data",
+   "label": "Item Name"
+  },
+  {
+   "fieldname": "serial_no",
+   "fieldtype": "Data",
+   "label": "SERIAL No"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "QTY",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "partno.stock_uom",
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "ro_ext_details",
+   "fieldtype": "Data",
+   "label": "RO Ext Details"
+  },
+  {
+   "fieldname": "ro_ext_date",
+   "fieldtype": "Date",
+   "label": "RO Ext Date"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Data",
+   "label": "Price"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Select",
+   "label": "Remarks",
+   "options": "\nDry Cleaning\nNormal Cleaning\nStitching\nLabeling\nRepair\nBER\nNew"
+  },
+  {
+   "fieldname": "capability_list",
+   "fieldtype": "Link",
+   "label": "Capability List",
+   "options": "Capability List"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-21 17:20:20.985119",
+ "modified_by": "Administrator",
+ "module": "Repair Management",
+ "name": "Child of Repair Note",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,44 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-03-06 14:39:58.946041",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "number_1",
+  "number_2",
+  "final_calculation"
+ ],
+ "fields": [
+  {
+   "fieldname": "number_1",
+   "fieldtype": "Data",
+   "label": "number 1"
+  },
+  {
+   "fieldname": "number_2",
+   "fieldtype": "Data",
+   "label": "number 2"
+  },
+  {
+   "fieldname": "final_calculation",
+   "fieldtype": "Data",
+   "label": "final calculation",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-21 17:20:18.394556",
+ "modified_by": "Administrator",
+ "module": "Repair Management",
+ "name": "calculation child table",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,432 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:PS-{DD}-{MM}-{YYYY}-{####}",
+ "creation": "2023-01-05 10:31:15.467075",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "address",
+  "telephone_no",
+  "email",
+  "accountable_manager",
+  "quality_manager",
+  "section_break_6",
+  "table_7",
+  "section_break_8",
+  "data_9",
+  "section_break_10",
+  "data_10",
+  "data_11",
+  "data_13",
+  "data_14",
+  "column_break_13",
+  "data_20",
+  "data_21",
+  "data_22",
+  "data_23",
+  "section_break_7",
+  "preparation",
+  "preparation_1",
+  "caution_section",
+  "data_12",
+  "section_break_25",
+  "caution",
+  "section_break_26",
+  "long_text_26",
+  "section_break_11",
+  "data_15",
+  "repair",
+  "section_break_13",
+  "data_29",
+  "data_34",
+  "table_4",
+  "section_break_36",
+  "long_text_36",
+  "section_break_38",
+  "table_39",
+  "section_break_30",
+  "application_method",
+  "table_41",
+  "section_break_42",
+  "nte",
+  "section_break_45",
+  "tttttt",
+  "table_46",
+  "section_break_47",
+  "data_51",
+  "data_52",
+  "prepared_by",
+  "issue_no_01",
+  "rev_no_01",
+  "section_break_54",
+  "name_of_the_authorized_person",
+  "authorization_no",
+  "signature",
+  "date",
+  "place",
+  "section_break_60",
+  "column_break_16",
+  "approved_by",
+  "attach_image_20",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "VANDANA AIRCRAFT SERVICES PVT. LTD.\nRanaji Enclave Part II, Nangli Dairy\nNear Sanatan Dharam Mandir,\nNajafgarh Road. New Delhi -110043",
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address",
+   "read_only": 1
+  },
+  {
+   "default": "+91-9810618747",
+   "fieldname": "telephone_no",
+   "fieldtype": "Data",
+   "label": "Telephone No",
+   "read_only": 1
+  },
+  {
+   "default": "info@vandanaaircraftservices.com",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "read_only": 1
+  },
+  {
+   "default": "Ms. RITIKA GUPTA",
+   "fieldname": "accountable_manager",
+   "fieldtype": "Data",
+   "label": "Accountable Manager",
+   "read_only": 1
+  },
+  {
+   "default": "Mr. SAURAV GUPTA",
+   "fieldname": "quality_manager",
+   "fieldtype": "Data",
+   "label": "Quality Manager",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "table_7",
+   "fieldtype": "Table",
+   "options": "Child of procedure sheet for material required"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "data_9",
+   "fieldtype": "Long Text"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "data_10",
+   "fieldtype": "Long Text"
+  },
+  {
+   "fieldname": "data_11",
+   "fieldtype": "Long Text"
+  },
+  {
+   "fieldname": "data_13",
+   "fieldtype": "Long Text"
+  },
+  {
+   "fieldname": "data_14",
+   "fieldtype": "Long Text"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "data_20",
+   "fieldtype": "Long Text"
+  },
+  {
+   "fieldname": "data_21",
+   "fieldtype": "Long Text"
+  },
+  {
+   "fieldname": "data_22",
+   "fieldtype": "Long Text"
+  },
+  {
+   "fieldname": "data_23",
+   "fieldtype": "Long Text"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "PREPARATION"
+  },
+  {
+   "bold": 1,
+   "default": "Preparation",
+   "fieldname": "preparation",
+   "fieldtype": "Long Text"
+  },
+  {
+   "bold": 1,
+   "fieldname": "preparation_1",
+   "fieldtype": "Table",
+   "options": "Child of Procedure Sheet 1"
+  },
+  {
+   "fieldname": "caution_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "CAUTION: DRY CLEANING IS NOT RECOMMENDED."
+  },
+  {
+   "bold": 1,
+   "default": "Caution: DC Not Req",
+   "fieldname": "data_12",
+   "fieldtype": "Long Text"
+  },
+  {
+   "fieldname": "section_break_25",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "caution",
+   "fieldtype": "Table",
+   "options": "Child of Procedure Sheet"
+  },
+  {
+   "fieldname": "section_break_26",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "long_text_26",
+   "fieldtype": "Long Text"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "bold": 1,
+   "default": "Repair",
+   "fieldname": "data_15",
+   "fieldtype": "Long Text"
+  },
+  {
+   "bold": 1,
+   "fieldname": "repair",
+   "fieldtype": "Table",
+   "label": "REPAIR",
+   "options": "Child of Proedure Sheet 2"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "bold": 1,
+   "default": "Procedure",
+   "fieldname": "data_29",
+   "fieldtype": "Long Text"
+  },
+  {
+   "fieldname": "data_34",
+   "fieldtype": "Long Text"
+  },
+  {
+   "fieldname": "table_4",
+   "fieldtype": "Table",
+   "options": "Child of procedure sheet for procedure"
+  },
+  {
+   "fieldname": "section_break_36",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "long_text_36",
+   "fieldtype": "Long Text"
+  },
+  {
+   "fieldname": "section_break_38",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "table_39",
+   "fieldtype": "Table",
+   "options": "Child of Procedure sheet 3"
+  },
+  {
+   "fieldname": "section_break_30",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "application_method",
+   "fieldtype": "Long Text"
+  },
+  {
+   "fieldname": "table_41",
+   "fieldtype": "Table",
+   "options": "Child of Procedure sheet 4"
+  },
+  {
+   "fieldname": "section_break_42",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "nte",
+   "fieldtype": "Long Text"
+  },
+  {
+   "fieldname": "section_break_45",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "tttttt",
+   "fieldtype": "Long Text"
+  },
+  {
+   "fieldname": "table_46",
+   "fieldtype": "Table",
+   "options": "child of Procedure sheet 5"
+  },
+  {
+   "fieldname": "section_break_47",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "data_51",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "data_52",
+   "fieldtype": "Data"
+  },
+  {
+   "bold": 1,
+   "fieldname": "prepared_by",
+   "fieldtype": "Link",
+   "label": "Prepared By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "issue_no_01",
+   "fieldtype": "Date",
+   "label": "Issue NO 01"
+  },
+  {
+   "fieldname": "rev_no_01",
+   "fieldtype": "Date",
+   "label": "Rev NO 01"
+  },
+  {
+   "fieldname": "section_break_54",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "name_of_the_authorized_person",
+   "fieldtype": "Data",
+   "label": "NAME OF THE AUTHORIZED PERSON"
+  },
+  {
+   "fieldname": "authorization_no",
+   "fieldtype": "Data",
+   "label": "AUTHORIZATION NO"
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Data",
+   "label": "SIGNATURE"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "DATE"
+  },
+  {
+   "fieldname": "place",
+   "fieldtype": "Data",
+   "label": "PLACE"
+  },
+  {
+   "fieldname": "section_break_60",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "default": "QUALITY MANAGER",
+   "fieldname": "approved_by",
+   "fieldtype": "Data",
+   "label": "Approved By",
+   "read_only": 1
+  },
+  {
+   "default": "/files/VASPL LOgo.png",
+   "fieldname": "attach_image_20",
+   "fieldtype": "Attach Image",
+   "hidden": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Procedure Sheet",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-21 17:20:08.547632",
+ "modified_by": "Administrator",
+ "module": "Repair Management",
+ "name": "Procedure Sheet",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

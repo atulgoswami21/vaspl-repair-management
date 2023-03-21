@@ -1,0 +1,286 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "DD-COVERS-.DD.MM.YY.#####",
+ "creation": "2023-02-27 16:43:18.367341",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "oem_part_no",
+  "custmer_part_no",
+  "vaspl_part_no",
+  "product_name",
+  "company_name",
+  "aircraft_type",
+  "seat_class_of_aircraft",
+  "issue_no",
+  "issue_date",
+  "quality_inspection_template",
+  "column_break_10",
+  "revision_no",
+  "revision_date",
+  "drawing_no",
+  "pattern_pic",
+  "marker_pic",
+  "cad_file",
+  "no_of_sections",
+  "length_of_marker",
+  "average",
+  "section_break_7",
+  "bom",
+  "column_break_22",
+  "routing",
+  "section_break_24",
+  "operations_table",
+  "column_break_15",
+  "fitment_check",
+  "sample_pics",
+  "notes",
+  "quality_form_no",
+  "ppt__pdf_files",
+  "column_break_31",
+  "change_log",
+  "equipment_used",
+  "software_used",
+  "quality_docs",
+  "cmm_ref_of_quality_dept",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "oem_part_no",
+   "fieldtype": "Data",
+   "label": "OEM PART No."
+  },
+  {
+   "fieldname": "custmer_part_no",
+   "fieldtype": "Data",
+   "label": "CUSTOMER PART No."
+  },
+  {
+   "fieldname": "vaspl_part_no",
+   "fieldtype": "Link",
+   "label": "VASPL PART No.",
+   "options": "VASPL Part No"
+  },
+  {
+   "fetch_from": "vaspl_part_no.item_name",
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "label": "PRODUCT NAME"
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Link",
+   "label": "COMPANY NAME",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "aircraft_type",
+   "fieldtype": "Link",
+   "label": "AIRCRAFT TYPE",
+   "options": "Aircraft Type"
+  },
+  {
+   "fieldname": "seat_class_of_aircraft",
+   "fieldtype": "Select",
+   "label": "SEAT CLASS OF AIRCRAFT",
+   "options": "\nFIRST CLASS\nBUSINESS CLASS\nECONOMY CLASS"
+  },
+  {
+   "fieldname": "issue_no",
+   "fieldtype": "Data",
+   "label": "ISSUE No."
+  },
+  {
+   "fieldname": "issue_date",
+   "fieldtype": "Date",
+   "label": "ISSUE DATE"
+  },
+  {
+   "fieldname": "quality_inspection_template",
+   "fieldtype": "Link",
+   "label": "Quality Inspection Template",
+   "options": "Quality Inspection Template"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "revision_no",
+   "fieldtype": "Data",
+   "label": "REVISION NO."
+  },
+  {
+   "fieldname": "revision_date",
+   "fieldtype": "Date",
+   "label": "REVISION DATE"
+  },
+  {
+   "fieldname": "drawing_no",
+   "fieldtype": "Data",
+   "label": "DRAWING No."
+  },
+  {
+   "fieldname": "pattern_pic",
+   "fieldtype": "Attach",
+   "label": "PATTERN PIC"
+  },
+  {
+   "fieldname": "marker_pic",
+   "fieldtype": "Attach",
+   "label": "MARKER PIC"
+  },
+  {
+   "fieldname": "cad_file",
+   "fieldtype": "Data",
+   "label": "CAD FILE"
+  },
+  {
+   "fieldname": "no_of_sections",
+   "fieldtype": "Data",
+   "label": "No. OF SECTIONS"
+  },
+  {
+   "fieldname": "length_of_marker",
+   "fieldtype": "Data",
+   "label": "LENGTH OF MARKER"
+  },
+  {
+   "fieldname": "average",
+   "fieldtype": "Data",
+   "label": "AVERAGE"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "bom",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "BOM",
+   "options": "BOM"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "routing",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Routing",
+   "options": "Routing"
+  },
+  {
+   "fieldname": "section_break_24",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "operations_table",
+   "fieldtype": "Table",
+   "label": "OPERATIONS Table",
+   "options": "BOM Operation"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "fitment_check",
+   "fieldtype": "Select",
+   "label": "FITMENT CHECK",
+   "options": "\nYES\nNO"
+  },
+  {
+   "fieldname": "sample_pics",
+   "fieldtype": "Attach",
+   "label": "SAMPLE PICS"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Data",
+   "label": "NOTES"
+  },
+  {
+   "fieldname": "quality_form_no",
+   "fieldtype": "Data",
+   "label": " QUALITY FORM No."
+  },
+  {
+   "fieldname": "ppt__pdf_files",
+   "fieldtype": "Table",
+   "label": "PPT / PDF FILES",
+   "options": "PPT-PDF FILES child table"
+  },
+  {
+   "fieldname": "column_break_31",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "change_log",
+   "fieldtype": "Attach",
+   "label": "CHANGE LOG"
+  },
+  {
+   "fieldname": "equipment_used",
+   "fieldtype": "Data",
+   "label": "EQUIPMENT USED"
+  },
+  {
+   "fieldname": "software_used",
+   "fieldtype": "Data",
+   "label": "SOFTWARE USED"
+  },
+  {
+   "fieldname": "quality_docs",
+   "fieldtype": "Data",
+   "label": "QUALITY DOCS."
+  },
+  {
+   "fieldname": "cmm_ref_of_quality_dept",
+   "fieldtype": "Data",
+   "label": "CMM REF. OF QUALITY DEPT."
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "COVERS  DETAILS",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-03-21 17:20:16.225824",
+ "modified_by": "Administrator",
+ "module": "Repair Management",
+ "name": "COVERS  DETAILS",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,273 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "VASPL-RN-.DD.MM.YY.#####",
+ "creation": "2023-01-09 15:47:54.884224",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "received_note",
+  "column_break_2",
+  "rn_no",
+  "date",
+  "party_name",
+  "mode_from_received",
+  "received_by_name",
+  "recived_by_id",
+  "designation",
+  "column_break_10",
+  "party_gdn_details",
+  "party_gdn_date",
+  "upload_gdn",
+  "repair_order_ext",
+  "section_break_16",
+  "repair_note_table",
+  "amended_from",
+  "dispatch_details_to_be_filled_later_section",
+  "mode",
+  "courier_name",
+  "column_break_22",
+  "courier_details",
+  "dispatch_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "received_note",
+   "fieldtype": "Section Break",
+   "label": "Received Note"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rn_no",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "RN No",
+   "print_hide": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": " Date"
+  },
+  {
+   "fieldname": "party_name",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Party name",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mode_from_received",
+   "fieldtype": "Select",
+   "label": "Mode from Received",
+   "options": "\nBy Road\nBy Hand\nBy Transport"
+  },
+  {
+   "fieldname": "received_by_name",
+   "fieldtype": "Link",
+   "label": "Received By ",
+   "options": "Employee",
+   "print_hide": 1
+  },
+  {
+   "fetch_from": "received_by_name.employee_name",
+   "fieldname": "recived_by_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Received by"
+  },
+  {
+   "depends_on": "received_by_name",
+   "fetch_from": "received_by_name.designation",
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "party_gdn_details",
+   "fieldtype": "Data",
+   "label": "Party GDN Details"
+  },
+  {
+   "fieldname": "party_gdn_date",
+   "fieldtype": "Date",
+   "label": "Party GDN Date"
+  },
+  {
+   "fieldname": "upload_gdn",
+   "fieldtype": "Attach",
+   "label": "Upload GDN"
+  },
+  {
+   "fieldname": "repair_order_ext",
+   "fieldtype": "Attach",
+   "label": "Repair Order (EXT)"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "repair_note_table",
+   "fieldtype": "Table",
+   "options": "Child of Repair Note"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Repair Note 1"
+  },
+  {
+   "fieldname": "dispatch_details_to_be_filled_later_section",
+   "fieldtype": "Section Break",
+   "label": "Dispatch Details (To be filled later)"
+  },
+  {
+   "fieldname": "mode",
+   "fieldtype": "Select",
+   "label": "Mode",
+   "options": "\nBy Road\nBy Customer Own Arrangement"
+  },
+  {
+   "fieldname": "courier_name",
+   "fieldtype": "Select",
+   "label": "Courier Name",
+   "options": "\nDTDT\nTrackon\nDHL\nFedex"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "courier_details",
+   "fieldtype": "Data",
+   "label": "Courier Details"
+  },
+  {
+   "fieldname": "dispatch_date",
+   "fieldtype": "Date",
+   "label": "Dispatch Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "group": "Add Sales Order by Clicking +",
+   "link_doctype": "Sales Order",
+   "link_fieldname": "repair_note"
+  }
+ ],
+ "modified": "2023-03-21 17:17:37.986771",
+ "modified_by": "Administrator",
+ "module": "Repair Management",
+ "name": "Repair Note 1",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Executive",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "report": 1,
+   "role": "Stock User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Store Head",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Gray",
+   "title": "Draft"
+  },
+  {
+   "color": "Red",
+   "title": "Rejected"
+  },
+  {
+   "color": "Yellow",
+   "title": "Approved"
+  },
+  {
+   "color": "Green",
+   "title": "Submitted"
+  }
+ ],
+ "track_changes": 1
+}

@@ -1,0 +1,361 @@
+{
+ "actions": [],
+ "autoname": "format:OC-{DD}-{MM}-{YYYY}-{####}",
+ "creation": "2023-01-23 11:05:53.582780",
+ "default_view": "List",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "company",
+  "column_break_3",
+  "posting_date",
+  "section_break_4",
+  "rn_no",
+  "wo_detail",
+  "column_break_8",
+  "name_of_consignee",
+  "section_break_10",
+  "work_order_detail",
+  "section_break_24",
+  "challan",
+  "column_break_15",
+  "number1",
+  "column_break_17",
+  "date1",
+  "section_break_19",
+  "bill__invoice_no",
+  "column_break_21",
+  "number2",
+  "column_break_23",
+  "date2",
+  "section_break_25",
+  "ca_form_1",
+  "column_break_27",
+  "number3",
+  "column_break_29",
+  "date3",
+  "section_break_31",
+  "release_note",
+  "column_break_33",
+  "number4",
+  "column_break_35",
+  "date4",
+  "section_break_37",
+  "certificate_of_conformity",
+  "column_break_39",
+  "number5",
+  "column_break_41",
+  "date5",
+  "section_break_43",
+  "test_report",
+  "column_break_45",
+  "number6",
+  "column_break_47",
+  "date6",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "QC-RN-.YYYY.-",
+   "print_hide": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Posting Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rn_no",
+   "fieldtype": "Link",
+   "label": "RN No",
+   "options": "Repair Note 1",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "depends_on": "rn_no",
+   "fieldname": "wo_detail",
+   "fieldtype": "Check",
+   "label": "WO Detail",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "rn_no.party_name",
+   "fieldname": "name_of_consignee",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Name of Consignee",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "depends_on": "wo_detail",
+   "fieldname": "work_order_detail",
+   "fieldtype": "Table",
+   "label": "Work Order Detail",
+   "options": "Child of Outward Checklist"
+  },
+  {
+   "collapsible_depends_on": "eval: doc.__islocal",
+   "fieldname": "section_break_24",
+   "fieldtype": "Section Break",
+   "label": "Related Documents"
+  },
+  {
+   "default": "0",
+   "fieldname": "challan",
+   "fieldtype": "Check",
+   "label": "Challan"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "challan",
+   "fieldname": "number1",
+   "fieldtype": "Link",
+   "label": "Number",
+   "options": "Delivery Note"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "challan",
+   "fetch_from": "number1.posting_date",
+   "fieldname": "date1",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_19",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "bill__invoice_no",
+   "fieldtype": "Check",
+   "label": "Bill / Invoice No"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "bill__invoice_no",
+   "fieldname": "number2",
+   "fieldtype": "Link",
+   "label": "Number",
+   "options": "Sales Invoice"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "bill__invoice_no",
+   "fetch_from": "number2.posting_date",
+   "fieldname": "date2",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_25",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "ca_form_1",
+   "fieldtype": "Check",
+   "label": "CA Form 1"
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "ca_form_1",
+   "fieldname": "number3",
+   "fieldtype": "Link",
+   "label": "Number",
+   "options": "CA Form"
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "ca_form_1",
+   "fetch_from": "number3.posting_date",
+   "fieldname": "date3",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_31",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "release_note",
+   "fieldtype": "Check",
+   "label": "Release Note"
+  },
+  {
+   "fieldname": "column_break_33",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "release_note",
+   "fieldname": "number4",
+   "fieldtype": "Data",
+   "label": "Number"
+  },
+  {
+   "fieldname": "column_break_35",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "release_note",
+   "fetch_from": "number3.date",
+   "fieldname": "date4",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_37",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "certificate_of_conformity",
+   "fieldtype": "Check",
+   "label": "Certificate of Conformity"
+  },
+  {
+   "fieldname": "column_break_39",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "certificate_of_conformity",
+   "fieldname": "number5",
+   "fieldtype": "Data",
+   "label": "Number"
+  },
+  {
+   "fieldname": "column_break_41",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "certificate_of_conformity",
+   "fieldname": "date5",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_43",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "test_report",
+   "fieldtype": "Check",
+   "label": "Test Report"
+  },
+  {
+   "fieldname": "column_break_45",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "test_report",
+   "fieldname": "number6",
+   "fieldtype": "Data",
+   "label": "Number"
+  },
+  {
+   "fieldname": "column_break_47",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "test_report",
+   "fieldname": "date6",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Outward Checklist",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "icon": "fa fa-calendar",
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-03-21 17:20:07.245607",
+ "modified_by": "Administrator",
+ "module": "Repair Management",
+ "name": "Outward Checklist",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Manufacturing User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "ASC",
+ "states": [],
+ "track_changes": 1
+}

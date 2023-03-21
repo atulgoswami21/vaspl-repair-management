@@ -1,0 +1,32 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-02-08 14:52:41.173793",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "data_1"
+ ],
+ "fields": [
+  {
+   "fieldname": "data_1",
+   "fieldtype": "Long Text",
+   "label": "Detail Of Work"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-21 17:20:12.456387",
+ "modified_by": "Administrator",
+ "module": "Repair Management",
+ "name": "Child of Procedure sheet 3",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

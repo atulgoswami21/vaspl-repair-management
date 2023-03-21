@@ -1,0 +1,50 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-02-03 12:14:25.534783",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "details_of_work",
+  "technician",
+  "cs",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "details_of_work",
+   "fieldtype": "Long Text",
+   "label": "Details of Work"
+  },
+  {
+   "fieldname": "technician",
+   "fieldtype": "Data",
+   "label": "Technician"
+  },
+  {
+   "fieldname": "cs",
+   "fieldtype": "Data",
+   "label": "CS"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-21 17:20:11.086540",
+ "modified_by": "Administrator",
+ "module": "Repair Management",
+ "name": "Child of procedure sheet for procedure",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

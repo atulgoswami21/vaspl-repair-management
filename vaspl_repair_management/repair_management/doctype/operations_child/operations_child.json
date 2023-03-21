@@ -1,0 +1,44 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-02-27 12:41:47.766641",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "operations",
+  "workstation_type",
+  "operations_time"
+ ],
+ "fields": [
+  {
+   "fieldname": "operations",
+   "fieldtype": "Data",
+   "label": "Operations"
+  },
+  {
+   "fieldname": "workstation_type",
+   "fieldtype": "Data",
+   "label": "Workstation type"
+  },
+  {
+   "fieldname": "operations_time",
+   "fieldtype": "Data",
+   "label": "operations time"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-21 17:20:14.264204",
+ "modified_by": "Administrator",
+ "module": "Repair Management",
+ "name": "Operations child",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,97 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-03-15 15:06:16.341506",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "r_d_project_name",
+  "r_d_project_issue_date",
+  "column_break_5",
+  "approval_status",
+  "section_break_9",
+  "r_d_part_no_details",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Naming Series",
+   "options": ".YY.-VARD-",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "r_d_project_name",
+   "fieldtype": "Data",
+   "label": "R & D Project Name"
+  },
+  {
+   "fieldname": "r_d_project_issue_date",
+   "fieldtype": "Date",
+   "label": "R & D Project Issue Date"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approval_status",
+   "fieldtype": "Select",
+   "label": "Approval Status",
+   "options": "\nIN PROGRESS\nAPPROVED\nON HOLD\nREJECTED"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "r_d_part_no_details",
+   "fieldtype": "Table",
+   "label": "R & D Part No Details",
+   "options": "Child of R and D"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "R and D",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-03-21 17:17:32.182782",
+ "modified_by": "Administrator",
+ "module": "Repair Management",
+ "name": "R and D",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

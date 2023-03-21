@@ -1,0 +1,157 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-03-15 15:21:58.202135",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "rd_number",
+  "part_no",
+  "vaspl__part_no",
+  "column_break_4",
+  "customer_part_no",
+  "oem_part_no",
+  "section_break_8",
+  "r_d_part_no_table",
+  "section_break_11",
+  "vaspl_part_no_table",
+  "section_break_12",
+  "operations_table",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": ".{rd_number}.-.###",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "rd_number",
+   "fieldtype": "Link",
+   "label": "R & D Number",
+   "options": "R and D"
+  },
+  {
+   "fieldname": "part_no",
+   "fieldtype": "Link",
+   "label": "Part No",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "part_no.vaspl_part_no",
+   "fetch_if_empty": 1,
+   "fieldname": "vaspl__part_no",
+   "fieldtype": "Data",
+   "label": "VASPL Part No",
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "part_no.customer_part_no",
+   "fetch_if_empty": 1,
+   "fieldname": "customer_part_no",
+   "fieldtype": "Data",
+   "label": "Customer Part No",
+   "unique": 1
+  },
+  {
+   "fetch_from": "part_no.oem_part_no",
+   "fetch_if_empty": 1,
+   "fieldname": "oem_part_no",
+   "fieldtype": "Data",
+   "label": "OEM Part No"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "r_d_part_no_table",
+   "fieldtype": "Table",
+   "label": "R & D Part No Table",
+   "options": "Child of R and D"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "depends_on": "vaspl__part_no",
+   "fieldname": "vaspl_part_no_table",
+   "fieldtype": "Table",
+   "label": "VASPL Part No Table",
+   "options": "Child of VASPL Part No"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "a",
+   "fieldname": "operations_table",
+   "fieldtype": "Table",
+   "label": "Operations table",
+   "options": "BOM Operation"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Drawing Link",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-03-21 17:20:20.351483",
+ "modified_by": "Administrator",
+ "module": "Repair Management",
+ "name": "Drawing Link",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Design Dept",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
