@@ -23,7 +23,7 @@
   {
    "fieldname": "rd_part_no",
    "fieldtype": "Link",
-   "label": "RD Part No",
+   "label": "R & D Part No",
    "options": "RD Part No"
   },
   {
@@ -53,7 +53,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-03-17 11:23:31.475915",
+ "modified": "2023-03-21 16:15:25.841132",
  "modified_by": "Administrator",
  "module": "Repair Management",
  "name": "RD Drawing No",
