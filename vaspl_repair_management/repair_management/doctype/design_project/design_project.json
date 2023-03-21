@@ -1,0 +1,159 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-03-16 18:17:46.567131",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "design_project_name",
+  "part_no",
+  "vaspl_part_no",
+  "issue_no",
+  "issue_date",
+  "revision_no",
+  "revision_date",
+  "vaspl_drawing_no",
+  "column_break_7",
+  "customer_part_no",
+  "oem_part_no",
+  "bom",
+  "routing",
+  "attach_vaspl_drawing",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fetch_from": "part_no.vaspl_part_no",
+   "fetch_if_empty": 1,
+   "fieldname": "vaspl_part_no",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "VASPL Part No"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Design Project",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": ".YY.-VADP-.####",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "design_project_name",
+   "fieldtype": "Data",
+   "label": "Design Project Name"
+  },
+  {
+   "fieldname": "issue_no",
+   "fieldtype": "Data",
+   "label": "Issue No"
+  },
+  {
+   "fieldname": "issue_date",
+   "fieldtype": "Date",
+   "label": "Issue Date"
+  },
+  {
+   "fieldname": "revision_no",
+   "fieldtype": "Data",
+   "label": "Revision No"
+  },
+  {
+   "fieldname": "revision_date",
+   "fieldtype": "Date",
+   "label": "Revision Date"
+  },
+  {
+   "fetch_from": "part_no.oem_part_no",
+   "fetch_if_empty": 1,
+   "fieldname": "oem_part_no",
+   "fieldtype": "Data",
+   "label": "OEM PART NO."
+  },
+  {
+   "fetch_from": "part_no.customer_part_no",
+   "fieldname": "customer_part_no",
+   "fieldtype": "Data",
+   "label": "CUSTOMER PART NO."
+  },
+  {
+   "fetch_from": "part_no.default_bom",
+   "fetch_if_empty": 1,
+   "fieldname": "bom",
+   "fieldtype": "Link",
+   "label": "BOM ",
+   "options": "BOM"
+  },
+  {
+   "fetch_from": "bom.routing",
+   "fieldname": "routing",
+   "fieldtype": "Link",
+   "label": "Routing",
+   "options": "Routing"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "customer_part_no.select_item_drawing",
+   "fetch_if_empty": 1,
+   "fieldname": "vaspl_drawing_no",
+   "fieldtype": "Link",
+   "label": "VASPL Drawing No",
+   "options": "Drawing Link"
+  },
+  {
+   "fieldname": "attach_vaspl_drawing",
+   "fieldtype": "Table",
+   "label": "Attach VASPL Drawing",
+   "options": "PPT-PDF FILES child table"
+  },
+  {
+   "fieldname": "part_no",
+   "fieldtype": "Link",
+   "label": "Part No",
+   "options": "Item"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-03-21 12:33:57.215120",
+ "modified_by": "Administrator",
+ "module": "Repair Management",
+ "name": "Design Project",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

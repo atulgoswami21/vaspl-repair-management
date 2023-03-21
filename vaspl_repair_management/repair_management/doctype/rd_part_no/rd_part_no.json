@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-03-13 17:05:33.186428",
+ "default_view": "List",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "section_break_2",
+  "rd_drawing_no",
+  "attach_drawing",
+  "column_break_5",
+  "bom",
+  "routing",
+  "section_break_5",
+  "operations_table",
+  "section_break_7",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": ".{rd_drawing_no}.-.###",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rd_drawing_no",
+   "fieldtype": "Link",
+   "label": "R & D Drawing No",
+   "options": "Drawing Link"
+  },
+  {
+   "fieldname": "attach_drawing",
+   "fieldtype": "Attach",
+   "label": "Attach Drawing"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bom",
+   "fieldtype": "Link",
+   "label": "BOM",
+   "options": "BOM"
+  },
+  {
+   "fetch_from": "bom.routing",
+   "fieldname": "routing",
+   "fieldtype": "Link",
+   "label": "Routing",
+   "options": "Routing"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "operations_table",
+   "fieldtype": "Table",
+   "label": "Operations Table",
+   "options": "BOM Operation"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "RD Part No",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "icon": "fa fa-archive",
+ "is_submittable": 1,
+ "links": [],
+ "max_attachments": 5,
+ "modified": "2023-03-17 17:16:39.477666",
+ "modified_by": "Administrator",
+ "module": "Repair Management",
+ "name": "RD Part No",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Item Manager",
+   "set_user_permissions": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

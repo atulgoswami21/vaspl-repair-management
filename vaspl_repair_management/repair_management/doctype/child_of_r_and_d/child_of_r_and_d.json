@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-03-16 15:41:06.730236",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "vaspl_part_no",
+  "r_d_part_no",
+  "bom",
+  "routing",
+  "drawing_no",
+  "attach_drawing"
+ ],
+ "fields": [
+  {
+   "fieldname": "r_d_part_no",
+   "fieldtype": "Link",
+   "label": "R & D Part No",
+   "options": "RD Part No"
+  },
+  {
+   "fieldname": "bom",
+   "fieldtype": "Link",
+   "label": "BOM",
+   "options": "BOM"
+  },
+  {
+   "fetch_from": "bom.routing",
+   "fieldname": "routing",
+   "fieldtype": "Link",
+   "label": "Routing",
+   "options": "Routing"
+  },
+  {
+   "fetch_from": "r_d_part_no.rd_drawing_no",
+   "fieldname": "drawing_no",
+   "fieldtype": "Link",
+   "label": "Drawing No",
+   "options": "Drawing Link"
+  },
+  {
+   "fieldname": "attach_drawing",
+   "fieldtype": "Attach",
+   "label": "Attach Drawing"
+  },
+  {
+   "fieldname": "vaspl_part_no",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "VASPL Part No",
+   "options": "VASPL Part No"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-21 11:03:55.330181",
+ "modified_by": "Administrator",
+ "module": "Repair Management",
+ "name": "Child of R and D",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
