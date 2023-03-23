@@ -14,8 +14,8 @@
   "docstatus": 0,
   "doctype": "Client Script",
   "dt": "Repair Note 1",
-  "enabled": 1,
-  "modified": "2023-02-14 11:34:49.911652",
+  "enabled": 0,
+  "modified": "2023-03-22 13:11:40.636200",
   "module": null,
   "name": "Repair note custom button",
   "script": "frappe.ui.form.on('Repair Note 1', {\n\trefresh(frm) {\n\t     \n\n\tfrm.add_custom_button(__('Sales Order'), function(){\n\t    frappe.set_route(\"app\", \"sales-order\", \"new-sales-order\");\n\t   //frappe.msgprint(frm.doc.email);\n    }, __(\"Sales Order Generate\")).css({'background-color':'#328fd3','color':'white'});\n    \n    \n\n    \n\n //\tfrm.add_custom_button(__('Generate Document'),\n//cur_frm.cscript['generate_document'], \"icon-exclamation\", \"btn-default\");\n\n    \n  //frm.add_custom_button(__(\"New\")).addClass(\"btn-warning\").css({'color':'white','background-color':'blue','font-weight': 'bold'}),function(){\n   //frappe.set_route(\"app\", \"sales-order\", \"new-sales-order\");   \n  //};\n    \n   // var set_css = function(frm){\n     //  addClass(\"btn-warning\").css({'color':'green','font-weight': 'bold'});\n        \n    //}\n\t}\n});",
@@ -147,7 +147,7 @@
   "doctype": "Client Script",
   "dt": "Repair Note 1",
   "enabled": 1,
-  "modified": "2023-02-21 14:33:24.660734",
+  "modified": "2023-03-22 13:11:30.227453",
   "module": null,
   "name": "Custom Notification for Repair Note 1",
   "script": "frappe.ui.form.on('Repair Note 1', {\n\non_submit:function(frm){\n    //console.log(frm.doc);\n    frappe.msgprint({\n        title:__(\"Notification\"),\n        indicator:'blue',\n        message:__('Repair Note Created for {0}',[frm.doc.party_name])      \n    });\n}\n\n//on_submit: function(frm) {\n\n//frappe.msgprint(\"Repair note Ceated successfully\",[frm.doc.party_name]);\n\n//}\n});",
@@ -367,10 +367,10 @@
   "doctype": "Client Script",
   "dt": "Sales Order",
   "enabled": 1,
-  "modified": "2023-03-09 16:52:17.145137",
+  "modified": "2023-03-23 11:24:25.674895",
   "module": null,
   "name": "Sales Order Item Details from repair Note",
-  "script": "frappe.ui.form.on(\"Sales Order\", {\n    \n    \"repair_note\": function(frm) {\n        \n        frm.clear_table(\"items\");\n        frm.refresh_field(\"items\");\n         //console.log(frm.doc.name1);\n            if(frm.doc.repair_note){\n                \n                frappe.model.with_doc(\"Repair Note 1\", frm.doc.repair_note, function() {\n                   \n                        var tabletransfer1= frappe.model.get_doc(\"Repair Note 1\", frm.doc.repair_note);\n                      // console.log(tabletransfer1);\n                        $.each(tabletransfer1.repair_note_table, function(index, row){\n                            var d = frm.add_child(\"items\");\n                            d.item_name = row.item_name__description;\n                            d.ro_ext_detail = row.ro_ext_details;\n                            d.qty = row.qty;\n                            d.ro_ext_date = row.ro_ext_date;\n                            d.uom = row.uom;\n                            d.item_code = row.partno;\n                            \n                            frm.refresh_field(\"items\");\n                            \n                        });\n                    \n                });\n            }\n            else  {\n                frm.clear_table(\"items\");\n                frm.refresh_field(\"items\");\n            }\n            \n    }\n    \n});",
+  "script": "frappe.ui.form.on(\"Sales Order\", {\n    \n    \"repair_note\": function(frm) {\n        \n        frm.clear_table(\"items\");\n        frm.refresh_field(\"items\");\n         //console.log(frm.doc.name1);\n            if(frm.doc.repair_note){\n                \n                frappe.model.with_doc(\"Repair Note 1\", frm.doc.repair_note, function() {\n                   \n                        var tabletransfer1= frappe.model.get_doc(\"Repair Note 1\", frm.doc.repair_note);\n                      // console.log(tabletransfer1);\n                        $.each(tabletransfer1.repair_note_table, function(index, row){\n                            var d = frm.add_child(\"items\");\n                            d.item_name = row.item_name__description;\n                            d.ro_ext_detail = row.ro_ext_details;\n                            d.qty = row.qty;\n                            d.ro_ext_date = row.ro_ext_date;\n                            d.uom = row.uom;\n                            d.item_code = row.partno.replace('RN-', '');       // to choose product in the child table instead service item\n                          //  d.description = row.description;\n                            frm.refresh_field(\"items\");\n                            \n                        });\n                    \n                });\n            }\n            else  {\n                frm.clear_table(\"items\");\n                frm.refresh_field(\"items\");\n            }\n            \n    }\n    \n});",
   "view": "Form"
  },
  {
@@ -558,6 +558,50 @@
   "module": null,
   "name": "vaspl drawing link unique code in item doctype",
   "script": "frappe.ui.form.on(\"Item\", {\r\n  item_group: function(frm) {\r\n    const series = frm.doc.item_group;\r\n    generateUniqueCode(uniqueCode => {\r\n      frm.set_value(\"vaspl_drawing_no\", uniqueCode);\r\n    });\r\n  }\r\n});\r\n\r\n\r\n\r\n//let counter = 0;\r\n\r\n//function generateUniqueCode(callback) {\r\n  //const prefix = \"VASPL/ED\";\r\n  //frappe.db.get_list('Item', {\r\n//      filters: {\r\n            //    vaspl_drawing_no: ['like', '${prefix}/%']\r\n          //  },\r\n        //    fields: ['vaspl_drawing_no'],\r\n      //      order_by: 'vaspl_drawing_no desc',\r\n    //        limit: 1\r\n  //}).then(existingItems => {\r\n//    if (existingItems.length > 0) {\r\n      //const lastCode = existingItems[0].vaspl_drawing_no;\r\n      //counter = Number(lastCode.substr(lastCode.length - 5)) + 1;\r\n    //} else {\r\n    //  counter = 1;\r\n  //  }\r\n//    const code = String(counter).padStart(5, '0'); // pads the number with leading zeros up to 5 digits\r\n    //const uniqueCode = `${prefix}/${code}`;\r\n    //callback(uniqueCode);\r\n  //});\r\n//}\r\n\r\nlet counter = 0;\r\nlet promise = Promise.resolve();\r\n\r\nfunction generateUniqueCode(callback) {\r\n  const prefix = \"VASPL/ED\";\r\n  \r\n  // Add the Promise to ensure that the counter is incremented only once for each call\r\n  promise = promise.then(() => {\r\n    return frappe.db.get_list('Item', {\r\n      filters: {\r\n        vaspl_drawing_no: ['like', `${prefix}/%`]\r\n      },\r\n      fields: ['vaspl_drawing_no'],\r\n      order_by: 'vaspl_drawing_no desc',\r\n      limit: 1\r\n    });\r\n  }).then(existingItems => {\r\n    if (existingItems.length > 0) {\r\n      const lastCode = existingItems[0].vaspl_drawing_no;\r\n      counter = Number(lastCode.substr(lastCode.length - 5)) + 1;\r\n    } else {\r\n      counter++;\r\n    }\r\n    const code = String(counter).padStart(5, '0'); // pads the number with leading zeros up to 5 digits\r\n    const uniqueCode = `${prefix}/${code}`;\r\n    callback(uniqueCode);\r\n  });\r\n  //.catch(error => {\r\n    //console.log(error);\r\n  //});\r\n}\r\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Repair Note 1",
+  "enabled": 0,
+  "modified": "2023-03-22 12:54:27.544195",
+  "module": null,
+  "name": "only service item in repair note 1",
+  "script": "frappe.ui.form.on('Repair Note 1', {\n    onload_post_render: function(frm) {                                           // also we can use refresh insted of onload_post_render\n        // get the child table\n        var repair_note_table = frm.fields_dict['repair_note_table'].grid;\n\n        // iterate through each row in the child table\n        repair_note_table.grid_rows.forEach(function(row) {\n            // get the part no field\n            var part_no_field = row.get_field('partno');\n\n            // set the query for the part no field to only show service items\n            part_no_field.get_query = function() {\n                return {\n                    filters: {\n                        \"item_group\": \"Service\"\n                    }\n                }\n            };\n        });\n    }\n});\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Sales Order",
+  "enabled": 0,
+  "modified": "2023-03-22 16:38:18.168908",
+  "module": null,
+  "name": "Remove RN",
+  "script": "frappe.ui.form.on('Sales Order', {\n    refresh: function(frm) {\n        // fetch the data from the \"Child of Repair Note\" table\n        frappe.call({\n            method: 'get_child_items',\n            doc: frm.doc,\n            callback: function(r) {\n                if (r.message) {\n                    // populate the items in the sales order item table\n                    $.each(r.message, function(i, item) {\n                        var row = frappe.model.add_child(frm.doc, 'Sales Order Item', 'items');\n                        row.item_code = item.item_code.replace('RN-', '');\n                        row.qty = item.qty;\n                        // add other item fields as needed\n                    });\n                    frm.refresh_field('items');\n                }\n            }\n        });\n    }\n});\n\nfunction get_child_items(doc) {\n    return frappe.db.get_list('Child of Repair Note', {\n        fields: ['item_code', 'qty'],\n        filters: {parent: doc.name}\n    });\n}\n\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Repair Note 1",
+  "enabled": 0,
+  "modified": "2023-03-23 10:57:22.681853",
+  "module": null,
+  "name": "Only service iyem in repair note",
+  "script": "frappe.ui.form.on(\"Repair Note 1\", \"onload\", function(frm) {\n    frm.fields_dict.repair_note_table.grid.get_field(\"partno\").get_query = function(doc, cdt, cdn) {\n        return {\n            filters: [\n                  [\"Item\", \"item_group\", \"=\", \"Services\"],\n                  \n             //   [\"Item\", \"is_sales_item\", \"=\", 0],                        // for services \n             //   [\"Item\", \"is_stock_item\", \"=\", 1],                        // for product\n             //   [\"Item\", \"is_stock_item\", \"=\", 1],                       // for raw materials use both statement\n             //   [\"Item\", \"is_purchase_item\", \"=\", 1]                     // for raw material use both statement\n            ]\n        };\n    };\n});\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Repair Note 1",
+  "enabled": 1,
+  "modified": "2023-03-23 11:00:00.349734",
+  "module": null,
+  "name": "Filter Item Group: Services in Repair Note 1",
+  "script": "frappe.ui.form.on(\"Repair Note 1\", \"onload\", function(frm) {\n    frm.fields_dict.repair_note_table.grid.get_field(\"partno\").get_query = function(doc, cdt, cdn) {\n        return {\n            filters: [\n                  [\"Item\", \"item_group\", \"=\", \"Services\"],\n                  \n             //   [\"Item\", \"is_sales_item\", \"=\", 0],                        // for services \n             //   [\"Item\", \"is_stock_item\", \"=\", 1],                        // for product\n             //   [\"Item\", \"is_stock_item\", \"=\", 1],                       // for raw materials use both statement\n             //   [\"Item\", \"is_purchase_item\", \"=\", 1]                     // for raw material use both statement\n            ]\n        };\n    };\n});\n",
   "view": "Form"
  }
 ]

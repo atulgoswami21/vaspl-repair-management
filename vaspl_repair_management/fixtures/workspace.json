@@ -346,7 +346,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:44.090111",
+  "modified": "2023-03-22 12:13:52.290210",
   "module": "Setup",
   "name": "Home",
   "parent_page": "",
@@ -1104,7 +1104,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:47.860135",
+  "modified": "2023-03-22 12:13:56.155834",
   "module": "CRM",
   "name": "CRM",
   "parent_page": "",
@@ -1112,7 +1112,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 29.0,
+  "sequence_id": 30.0,
   "shortcuts": [
    {
     "color": "Blue",
@@ -2230,7 +2230,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:50.583085",
+  "modified": "2023-03-22 12:13:59.037145",
   "module": "Selling",
   "name": "Selling",
   "parent_page": "",
@@ -2238,7 +2238,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 49.0,
+  "sequence_id": 50.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -3084,7 +3084,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:47.651496",
+  "modified": "2023-03-22 12:13:55.929710",
   "module": "Buying",
   "name": "Buying",
   "parent_page": "",
@@ -3092,7 +3092,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 28.0,
+  "sequence_id": 29.0,
   "shortcuts": [
    {
     "color": "Green",
@@ -3528,7 +3528,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:51.255290",
+  "modified": "2023-03-22 12:13:59.680421",
   "module": "Website",
   "name": "Website",
   "parent_page": "",
@@ -3536,7 +3536,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 53.0,
+  "sequence_id": 54.0,
   "shortcuts": [
    {
     "color": "Green",
@@ -3926,7 +3926,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:50.966042",
+  "modified": "2023-03-22 12:13:59.402566",
   "module": "Automation",
   "name": "Tools",
   "parent_page": "",
@@ -3934,7 +3934,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 51.0,
+  "sequence_id": 52.0,
   "shortcuts": [
    {
     "color": null,
@@ -4532,7 +4532,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:51.396634",
+  "modified": "2023-03-22 12:13:59.825452",
   "module": "Core",
   "name": "Settings",
   "parent_page": "",
@@ -4540,7 +4540,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 54.0,
+  "sequence_id": 55.0,
   "shortcuts": [
    {
     "color": null,
@@ -4806,7 +4806,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:51.119091",
+  "modified": "2023-03-22 12:13:59.545597",
   "module": "Core",
   "name": "Users",
   "parent_page": "",
@@ -4814,7 +4814,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 52.0,
+  "sequence_id": 53.0,
   "shortcuts": [
    {
     "color": null,
@@ -5092,7 +5092,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:49.047745",
+  "modified": "2023-03-22 12:13:57.413356",
   "module": "Custom",
   "name": "Customization",
   "parent_page": "",
@@ -5100,7 +5100,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 37.0,
+  "sequence_id": 38.0,
   "shortcuts": [
    {
     "color": null,
@@ -5460,7 +5460,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:49.733481",
+  "modified": "2023-03-22 12:13:58.173402",
   "module": "Integrations",
   "name": "Integrations",
   "parent_page": "",
@@ -5468,7 +5468,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 43.0,
+  "sequence_id": 44.0,
   "shortcuts": [],
   "title": "Integrations"
  },
@@ -7123,7 +7123,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:46.886389",
+  "modified": "2023-03-22 12:13:55.105189",
   "module": "Accounts",
   "name": "Accounting",
   "parent_page": "",
@@ -7131,7 +7131,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 23.0,
+  "sequence_id": 24.0,
   "shortcuts": [
    {
     "color": null,
@@ -8337,7 +8337,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:46.290593",
+  "modified": "2023-03-22 12:13:54.563004",
   "module": "Stock",
   "name": "Stock",
   "parent_page": "",
@@ -8352,7 +8352,7 @@
     "role": "stock"
    }
   ],
-  "sequence_id": 19.0,
+  "sequence_id": 20.0,
   "shortcuts": [
    {
     "color": "Green",
@@ -8744,7 +8744,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:47.374612",
+  "modified": "2023-03-22 12:13:55.622494",
   "module": "Assets",
   "name": "Assets",
   "parent_page": "",
@@ -8752,7 +8752,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 26.0,
+  "sequence_id": 27.0,
   "shortcuts": [
    {
     "color": null,
@@ -9104,7 +9104,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:50.323357",
+  "modified": "2023-03-22 12:13:58.779509",
   "module": "Projects",
   "name": "Projects",
   "parent_page": "",
@@ -9112,7 +9112,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 47.0,
+  "sequence_id": 48.0,
   "shortcuts": [
    {
     "color": "Blue",
@@ -9454,7 +9454,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:50.824615",
+  "modified": "2023-03-22 12:13:59.267795",
   "module": "Support",
   "name": "Support",
   "parent_page": "",
@@ -9462,7 +9462,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 50.0,
+  "sequence_id": 51.0,
   "shortcuts": [
    {
     "color": "Yellow",
@@ -10120,7 +10120,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:48.054224",
+  "modified": "2023-03-22 12:13:56.368333",
   "module": "HR",
   "name": "HR",
   "parent_page": "",
@@ -10128,7 +10128,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 30.0,
+  "sequence_id": 31.0,
   "shortcuts": [
    {
     "color": null,
@@ -10442,7 +10442,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:50.198790",
+  "modified": "2023-03-22 12:13:58.650850",
   "module": "Quality Management",
   "name": "Quality",
   "parent_page": "",
@@ -10457,7 +10457,7 @@
     "role": "Administrator"
    }
   ],
-  "sequence_id": 46.0,
+  "sequence_id": 47.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -11181,7 +11181,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:50.005873",
+  "modified": "2023-03-22 12:13:58.470469",
   "module": "Manufacturing",
   "name": "Manufacturing",
   "parent_page": "",
@@ -11189,7 +11189,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 45.0,
+  "sequence_id": 46.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -11447,7 +11447,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:50.458860",
+  "modified": "2023-03-22 12:13:58.912802",
   "module": "Selling",
   "name": "Retail",
   "parent_page": "",
@@ -11455,7 +11455,7 @@
   "quick_lists": [],
   "restrict_to_domain": "Retail",
   "roles": [],
-  "sequence_id": 48.0,
+  "sequence_id": 49.0,
   "shortcuts": [
    {
     "color": null,
@@ -11837,7 +11837,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:49.855220",
+  "modified": "2023-03-22 12:13:58.309764",
   "module": "Loan Management",
   "name": "Loans",
   "parent_page": "",
@@ -11845,7 +11845,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 44.0,
+  "sequence_id": 45.0,
   "shortcuts": [
    {
     "color": "Green",
@@ -11951,7 +11951,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:49.372550",
+  "modified": "2023-03-22 12:13:57.750713",
   "module": "Payroll",
   "name": "Payroll",
   "parent_page": "",
@@ -11959,7 +11959,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 40.0,
+  "sequence_id": 41.0,
   "shortcuts": [],
   "title": "Payroll"
  },
@@ -12102,7 +12102,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:49.177161",
+  "modified": "2023-03-22 12:13:57.536781",
   "module": "ERPNext Integrations",
   "name": "ERPNext Integrations",
   "parent_page": "",
@@ -12110,7 +12110,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 38.0,
+  "sequence_id": 39.0,
   "shortcuts": [],
   "title": "ERPNext Integrations"
  },
@@ -12173,7 +12173,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:51.545585",
+  "modified": "2023-03-22 12:13:59.972787",
   "module": "Utilities",
   "name": "Utilities",
   "parent_page": "",
@@ -12181,7 +12181,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 55.0,
+  "sequence_id": 56.0,
   "shortcuts": [],
   "title": "Utilities"
  },
@@ -12612,7 +12612,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:47.493786",
+  "modified": "2023-03-22 12:13:55.763199",
   "module": "Core",
   "name": "Build",
   "parent_page": "",
@@ -12620,7 +12620,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 27.0,
+  "sequence_id": 28.0,
   "shortcuts": [
    {
     "color": null,
@@ -12677,7 +12677,7 @@
   "icon": "setting",
   "label": "ERPNext Settings",
   "links": [],
-  "modified": "2023-03-16 16:36:49.278439",
+  "modified": "2023-03-22 12:13:57.641807",
   "module": "Setup",
   "name": "ERPNext Settings",
   "parent_page": "",
@@ -12685,7 +12685,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 39.0,
+  "sequence_id": 40.0,
   "shortcuts": [
    {
     "color": null,
@@ -13047,7 +13047,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:45.232756",
+  "modified": "2023-03-22 12:13:53.568130",
   "module": "GST India",
   "name": "GST India",
   "parent_page": "",
@@ -13062,7 +13062,7 @@
     "role": "ACCOUNTS-VASPL"
    }
   ],
-  "sequence_id": 10.0,
+  "sequence_id": 11.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -13412,7 +13412,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:48.684735",
+  "modified": "2023-03-22 12:13:57.033380",
   "module": "HR",
   "name": "Recruitment",
   "parent_page": "HR",
@@ -13429,7 +13429,7 @@
   ],
   "restrict_to_domain": null,
   "roles": [],
-  "sequence_id": 34.0,
+  "sequence_id": 35.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -13965,7 +13965,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:48.239346",
+  "modified": "2023-03-22 12:13:56.567725",
   "module": "HR",
   "name": "Employee Lifecycle",
   "parent_page": "HR",
@@ -13998,7 +13998,7 @@
   ],
   "restrict_to_domain": null,
   "roles": [],
-  "sequence_id": 31.0,
+  "sequence_id": 32.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -14366,7 +14366,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:48.405078",
+  "modified": "2023-03-22 12:13:56.743764",
   "module": "HR",
   "name": "Shift & Attendance",
   "parent_page": "HR",
@@ -14374,7 +14374,7 @@
   "quick_lists": [],
   "restrict_to_domain": null,
   "roles": [],
-  "sequence_id": 32.0,
+  "sequence_id": 33.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -14718,7 +14718,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:48.810123",
+  "modified": "2023-03-22 12:13:57.168037",
   "module": "HR",
   "name": "Leaves",
   "parent_page": "HR",
@@ -14726,7 +14726,7 @@
   "quick_lists": [],
   "restrict_to_domain": null,
   "roles": [],
-  "sequence_id": 35.0,
+  "sequence_id": 36.0,
   "shortcuts": [
    {
     "color": "Orange",
@@ -14914,7 +14914,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:48.933820",
+  "modified": "2023-03-22 12:13:57.297561",
   "module": "HR",
   "name": "Performance",
   "parent_page": "HR",
@@ -14922,7 +14922,7 @@
   "quick_lists": [],
   "restrict_to_domain": null,
   "roles": [],
-  "sequence_id": 36.0,
+  "sequence_id": 37.0,
   "shortcuts": [
    {
     "color": "Orange",
@@ -15344,7 +15344,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:48.536666",
+  "modified": "2023-03-22 12:13:56.888226",
   "module": "HR",
   "name": "Expense Claims",
   "parent_page": "HR",
@@ -15352,7 +15352,7 @@
   "quick_lists": [],
   "restrict_to_domain": null,
   "roles": [],
-  "sequence_id": 33.0,
+  "sequence_id": 34.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -16034,7 +16034,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:49.473167",
+  "modified": "2023-03-22 12:13:57.853352",
   "module": "Payroll",
   "name": "Salary Payout",
   "parent_page": "Payroll",
@@ -16042,7 +16042,7 @@
   "quick_lists": [],
   "restrict_to_domain": null,
   "roles": [],
-  "sequence_id": 41.0,
+  "sequence_id": 42.0,
   "shortcuts": [
    {
     "color": "Red",
@@ -16308,7 +16308,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:49.623475",
+  "modified": "2023-03-22 12:13:58.044379",
   "module": "Payroll",
   "name": "Tax & Benefits",
   "parent_page": "Payroll",
@@ -16316,7 +16316,7 @@
   "quick_lists": [],
   "restrict_to_domain": null,
   "roles": [],
-  "sequence_id": 42.0,
+  "sequence_id": 43.0,
   "shortcuts": [
    {
     "color": "Red",
@@ -16718,7 +16718,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:45.793396",
+  "modified": "2023-03-22 12:13:54.127500",
   "module": "",
   "name": "SMS (Safety)",
   "parent_page": "",
@@ -16739,7 +16739,7 @@
     "role": "SMS(Safety)"
    }
   ],
-  "sequence_id": 15.0,
+  "sequence_id": 16.0,
   "shortcuts": [],
   "title": "SMS (Safety)"
  },
@@ -17393,7 +17393,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:45.072268",
+  "modified": "2023-03-22 12:13:53.409042",
   "module": "",
   "name": "HR VASPL",
   "parent_page": "",
@@ -17414,7 +17414,7 @@
     "role": "HR VASPL"
    }
   ],
-  "sequence_id": 9.0,
+  "sequence_id": 10.0,
   "shortcuts": [],
   "title": "HR VASPL"
  },
@@ -17869,7 +17869,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:44.398120",
+  "modified": "2023-03-22 12:13:52.597254",
   "module": null,
   "name": "Repair (RM)",
   "parent_page": "",
@@ -18102,7 +18102,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:45.923213",
+  "modified": "2023-03-22 12:13:54.239773",
   "module": null,
   "name": "Quality Management (QM)",
   "parent_page": "",
@@ -18123,7 +18123,7 @@
     "role": "Quality Management (QM)"
    }
   ],
-  "sequence_id": 16.0,
+  "sequence_id": 17.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -18279,7 +18279,7 @@
   "icon": "dashboard-list",
   "label": "Admin Dashboard",
   "links": [],
-  "modified": "2023-03-16 16:36:44.290490",
+  "modified": "2023-03-22 12:13:52.492654",
   "module": null,
   "name": "Admin Dashboard",
   "parent_page": "",
@@ -18477,7 +18477,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:46.161290",
+  "modified": "2023-03-22 12:13:54.441147",
   "module": null,
   "name": "Inward & Dispatch",
   "parent_page": "",
@@ -18492,7 +18492,7 @@
     "role": "Inward and dispatch"
    }
   ],
-  "sequence_id": 18.0,
+  "sequence_id": 19.0,
   "shortcuts": [
    {
     "color": "Orange",
@@ -18807,7 +18807,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:46.558435",
+  "modified": "2023-03-22 12:13:54.801209",
   "module": null,
   "name": "CRMe",
   "parent_page": "",
@@ -18822,7 +18822,7 @@
     "role": "CRMe"
    }
   ],
-  "sequence_id": 20.0,
+  "sequence_id": 21.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -19176,7 +19176,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:45.378220",
+  "modified": "2023-03-22 12:13:53.713788",
   "module": null,
   "name": "Inventory & Stock",
   "parent_page": "",
@@ -19197,7 +19197,7 @@
     "role": "Inventory and Stock"
    }
   ],
-  "sequence_id": 11.0,
+  "sequence_id": 12.0,
   "shortcuts": [
    {
     "color": "Green",
@@ -19355,7 +19355,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:44.863406",
+  "modified": "2023-03-22 12:13:53.128793",
   "module": null,
   "name": "QUOTATIONS",
   "parent_page": "",
@@ -19570,7 +19570,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:44.647451",
+  "modified": "2023-03-22 12:13:52.949940",
   "module": null,
   "name": "INVOICES",
   "parent_page": "Repair (RM)",
@@ -19767,7 +19767,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:44.544206",
+  "modified": "2023-03-22 12:13:52.735035",
   "module": null,
   "name": "PLANNING (PP)",
   "parent_page": "Repair (RM)",
@@ -20008,7 +20008,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:44.752161",
+  "modified": "2023-03-22 12:13:53.032023",
   "module": null,
   "name": "BOM Detail",
   "parent_page": "Repair (RM)",
@@ -20169,7 +20169,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:45.504101",
+  "modified": "2023-03-22 12:13:53.831435",
   "module": null,
   "name": "ITEM DETAIL",
   "parent_page": "Inventory & Stock",
@@ -20184,7 +20184,7 @@
     "role": "Inventory and Stock"
    }
   ],
-  "sequence_id": 12.0,
+  "sequence_id": 13.0,
   "shortcuts": [],
   "title": "ITEM DETAIL"
  },
@@ -20335,7 +20335,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:45.594881",
+  "modified": "2023-03-22 12:13:53.923195",
   "module": null,
   "name": "TRANSACTIONS",
   "parent_page": "Inventory & Stock",
@@ -20350,7 +20350,7 @@
     "role": "Inventory and Stock"
    }
   ],
-  "sequence_id": 13.0,
+  "sequence_id": 14.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -20506,7 +20506,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:45.691599",
+  "modified": "2023-03-22 12:13:54.025622",
   "module": null,
   "name": "BATCH & SERIAL",
   "parent_page": "Inventory & Stock",
@@ -20521,7 +20521,7 @@
     "role": "Inventory and Stock"
    }
   ],
-  "sequence_id": 14.0,
+  "sequence_id": 15.0,
   "shortcuts": [],
   "title": "BATCH & SERIAL"
  },
@@ -20600,7 +20600,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:47.202180",
+  "modified": "2023-03-22 12:13:55.437155",
   "module": null,
   "name": "WORKFLOW SETTINGS",
   "parent_page": "",
@@ -20615,7 +20615,7 @@
     "role": "Workflow Settings"
    }
   ],
-  "sequence_id": 24.0,
+  "sequence_id": 25.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -20915,7 +20915,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-20 10:18:03.905272",
+  "modified": "2023-03-22 12:13:53.219496",
   "module": null,
   "name": "DESIGN",
   "parent_page": "",
@@ -21049,7 +21049,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:46.761572",
+  "modified": "2023-03-22 12:13:54.980165",
   "module": null,
   "name": "SUPPORT DESK",
   "parent_page": "",
@@ -21064,7 +21064,7 @@
     "role": "Support Desk"
    }
   ],
-  "sequence_id": 22.0,
+  "sequence_id": 23.0,
   "shortcuts": [],
   "title": "SUPPORT DESK"
  },
@@ -21215,7 +21215,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:47.288029",
+  "modified": "2023-03-22 12:13:55.525539",
   "module": null,
   "name": "MAINTENANCE",
   "parent_page": "",
@@ -21230,7 +21230,7 @@
     "role": "Maintenance"
    }
   ],
-  "sequence_id": 25.0,
+  "sequence_id": 26.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -21338,7 +21338,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-16 16:36:46.676600",
+  "modified": "2023-03-22 12:13:54.901487",
   "module": null,
   "name": "PRINT FORMAT SETUP",
   "parent_page": "",
@@ -21353,7 +21353,7 @@
     "role": "Print Format"
    }
   ],
-  "sequence_id": 21.0,
+  "sequence_id": 22.0,
   "shortcuts": [],
   "title": "PRINT FORMAT SETUP"
  },
@@ -21495,7 +21495,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2023-03-20 14:44:08.897201",
+  "modified": "2023-03-22 12:13:54.346466",
   "module": null,
   "name": "ASSET MANAGEMENT",
   "parent_page": "",
@@ -21510,7 +21510,7 @@
     "role": "Asset Management"
    }
   ],
-  "sequence_id": 17.0,
+  "sequence_id": 18.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -21570,5 +21570,51 @@
    }
   ],
   "title": "ASSET MANAGEMENT"
+ },
+ {
+  "charts": [],
+  "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">DRAWINGS</span>\",\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}},{\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Drawing Link\",\"col\":4}},{\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Drawing Directory\",\"col\":4}}]",
+  "docstatus": 0,
+  "doctype": "Workspace",
+  "for_user": "",
+  "hide_custom": 0,
+  "icon": null,
+  "label": "DRAWINGS",
+  "links": [],
+  "modified": "2023-03-22 12:55:08.554636",
+  "module": null,
+  "name": "DRAWINGS",
+  "parent_page": "",
+  "public": 1,
+  "quick_lists": [
+   {
+    "document_type": "Drawing Link",
+    "label": "Drawing Link",
+    "parent": "DRAWINGS",
+    "parentfield": "quick_lists",
+    "parenttype": "Workspace",
+    "quick_list_filter": null
+   },
+   {
+    "document_type": "File",
+    "label": "Drawing Directory",
+    "parent": "DRAWINGS",
+    "parentfield": "quick_lists",
+    "parenttype": "Workspace",
+    "quick_list_filter": null
+   }
+  ],
+  "restrict_to_domain": null,
+  "roles": [
+   {
+    "parent": "DRAWINGS",
+    "parentfield": "roles",
+    "parenttype": "Workspace",
+    "role": "Design Dept"
+   }
+  ],
+  "sequence_id": 9.0,
+  "shortcuts": [],
+  "title": "DRAWINGS"
  }
 ]

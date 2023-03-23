@@ -1,12 +1,14 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2022-12-26 15:51:55.645999",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "naming_series",
   "type",
   "name1",
   "safety_feedback",
@@ -36,15 +38,20 @@
    "label": "currency",
    "options": "INR",
    "precision": "0"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-21 18:29:42.876379",
+ "modified": "2023-03-22 11:23:34.769909",
  "modified_by": "Administrator",
  "module": "Repair Management",
  "name": "Safety Audit",
- "naming_rule": "By script",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
