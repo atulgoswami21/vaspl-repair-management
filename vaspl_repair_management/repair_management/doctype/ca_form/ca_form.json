@@ -12,8 +12,9 @@
   "get_items_from",
   "column_break1",
   "posting_date",
-  "section_break_22",
   "work_order",
+  "section_break_22",
+  "work_order_table",
   "section_break_9",
   "car_145_a50_release",
   "detail",
@@ -69,12 +70,6 @@
   {
    "fieldname": "section_break_22",
    "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "work_order",
-   "fieldtype": "Table",
-   "label": "Work Order",
-   "options": "Child of CA Form"
   },
   {
    "fieldname": "section_break_9",
@@ -159,13 +154,25 @@
    "options": "CA Form",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "work_order_table",
+   "fieldtype": "Table",
+   "label": "Work Order Table",
+   "options": "Child of CA Form"
+  },
+  {
+   "fieldname": "work_order",
+   "fieldtype": "Link",
+   "label": "Work Order",
+   "options": "Work Order"
   }
  ],
  "icon": "fa fa-calendar",
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-03-21 18:29:43.404428",
+ "modified": "2023-03-24 10:32:21.100741",
  "modified_by": "Administrator",
  "module": "Repair Management",
  "name": "CA Form",

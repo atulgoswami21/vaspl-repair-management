@@ -6,7 +6,7 @@ app_publisher = "Vijatshi Software"
 app_description = "Repair Management System"
 app_email = "atul@vijatshisoftware.com"
 app_license = "MIT"
-fixtures = ["DocType","Workspace","Custom Field","Customize Form","Client Script","Property Setter","Print Format"]
+fixtures = ["Workspace","Custom Field","Customize Form","Client Script","Property Setter","Print Format"]
 # Includes in <head>
 # ------------------
 

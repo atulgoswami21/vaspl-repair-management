@@ -9,34 +9,17 @@
  "field_order": [
   "naming_series",
   "company",
+  "rn_no",
   "column_break_3",
   "posting_date",
-  "section_break_4",
-  "rn_no",
-  "wo_detail",
-  "column_break_8",
   "name_of_consignee",
-  "section_break_10",
+  "section_break_11",
   "work_order_detail",
+  "challan_details",
+  "sales_invoice_details",
+  "ca_form_details",
+  "certificate_of_conformance_details",
   "section_break_24",
-  "challan",
-  "column_break_15",
-  "number1",
-  "column_break_17",
-  "date1",
-  "section_break_19",
-  "bill__invoice_no",
-  "column_break_21",
-  "number2",
-  "column_break_23",
-  "date2",
-  "section_break_25",
-  "ca_form_1",
-  "column_break_27",
-  "number3",
-  "column_break_29",
-  "date3",
-  "section_break_31",
   "release_note",
   "column_break_33",
   "number4",
@@ -60,10 +43,10 @@
   {
    "fieldname": "naming_series",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "Naming Series",
    "options": "QC-RN-.YYYY.-",
-   "print_hide": 1,
-   "reqd": 1
+   "print_hide": 1
   },
   {
    "fieldname": "company",
@@ -87,10 +70,6 @@
    "reqd": 1
   },
   {
-   "fieldname": "section_break_4",
-   "fieldtype": "Section Break"
-  },
-  {
    "fieldname": "rn_no",
    "fieldtype": "Link",
    "label": "RN No",
@@ -99,32 +78,6 @@
   },
   {
    "default": "0",
-   "depends_on": "rn_no",
-   "fieldname": "wo_detail",
-   "fieldtype": "Check",
-   "label": "WO Detail",
-   "print_hide": 1
-  },
-  {
-   "fieldname": "column_break_8",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fetch_from": "rn_no.party_name",
-   "fieldname": "name_of_consignee",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Name of Consignee",
-   "read_only": 1
-  },
-  {
-   "fieldname": "section_break_10",
-   "fieldtype": "Section Break"
-  },
-  {
-   "default": "0",
-   "depends_on": "wo_detail",
    "fieldname": "work_order_detail",
    "fieldtype": "Table",
    "label": "Work Order Detail",
@@ -135,102 +88,6 @@
    "fieldname": "section_break_24",
    "fieldtype": "Section Break",
    "label": "Related Documents"
-  },
-  {
-   "default": "0",
-   "fieldname": "challan",
-   "fieldtype": "Check",
-   "label": "Challan"
-  },
-  {
-   "fieldname": "column_break_15",
-   "fieldtype": "Column Break"
-  },
-  {
-   "depends_on": "challan",
-   "fieldname": "number1",
-   "fieldtype": "Link",
-   "label": "Number",
-   "options": "Delivery Note"
-  },
-  {
-   "fieldname": "column_break_17",
-   "fieldtype": "Column Break"
-  },
-  {
-   "depends_on": "challan",
-   "fetch_from": "number1.posting_date",
-   "fieldname": "date1",
-   "fieldtype": "Date",
-   "label": "Date"
-  },
-  {
-   "fieldname": "section_break_19",
-   "fieldtype": "Section Break"
-  },
-  {
-   "default": "0",
-   "fieldname": "bill__invoice_no",
-   "fieldtype": "Check",
-   "label": "Bill / Invoice No"
-  },
-  {
-   "fieldname": "column_break_21",
-   "fieldtype": "Column Break"
-  },
-  {
-   "depends_on": "bill__invoice_no",
-   "fieldname": "number2",
-   "fieldtype": "Link",
-   "label": "Number",
-   "options": "Sales Invoice"
-  },
-  {
-   "fieldname": "column_break_23",
-   "fieldtype": "Column Break"
-  },
-  {
-   "depends_on": "bill__invoice_no",
-   "fetch_from": "number2.posting_date",
-   "fieldname": "date2",
-   "fieldtype": "Date",
-   "label": "Date"
-  },
-  {
-   "fieldname": "section_break_25",
-   "fieldtype": "Section Break"
-  },
-  {
-   "default": "0",
-   "fieldname": "ca_form_1",
-   "fieldtype": "Check",
-   "label": "CA Form 1"
-  },
-  {
-   "fieldname": "column_break_27",
-   "fieldtype": "Column Break"
-  },
-  {
-   "depends_on": "ca_form_1",
-   "fieldname": "number3",
-   "fieldtype": "Link",
-   "label": "Number",
-   "options": "CA Form"
-  },
-  {
-   "fieldname": "column_break_29",
-   "fieldtype": "Column Break"
-  },
-  {
-   "depends_on": "ca_form_1",
-   "fetch_from": "number3.posting_date",
-   "fieldname": "date3",
-   "fieldtype": "Date",
-   "label": "Date"
-  },
-  {
-   "fieldname": "section_break_31",
-   "fieldtype": "Section Break"
   },
   {
    "default": "0",
@@ -276,8 +133,9 @@
   {
    "depends_on": "certificate_of_conformity",
    "fieldname": "number5",
-   "fieldtype": "Data",
-   "label": "Number"
+   "fieldtype": "Link",
+   "label": "Number",
+   "options": "Certificate of Conformance"
   },
   {
    "fieldname": "column_break_41",
@@ -285,6 +143,7 @@
   },
   {
    "depends_on": "certificate_of_conformity",
+   "fetch_from": "number5.date",
    "fieldname": "date5",
    "fieldtype": "Date",
    "label": "Date"
@@ -327,13 +186,52 @@
    "options": "Outward Checklist",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break",
+   "label": "Related Documents"
+  },
+  {
+   "fieldname": "challan_details",
+   "fieldtype": "Table",
+   "label": "Challan Details",
+   "options": "Child of Outward Checklist-Challan"
+  },
+  {
+   "fieldname": "sales_invoice_details",
+   "fieldtype": "Table",
+   "label": "Sales Invoice Details",
+   "options": "Child of Outward Checklist-Sales Invoice"
+  },
+  {
+   "fieldname": "ca_form_details",
+   "fieldtype": "Table",
+   "label": "CA Form Details",
+   "options": "Child of Outward Checklist-CA Form"
+  },
+  {
+   "depends_on": "rn_no",
+   "fetch_from": "rn_no.party_name",
+   "fetch_if_empty": 1,
+   "fieldname": "name_of_consignee",
+   "fieldtype": "Link",
+   "label": "Name of Consignee",
+   "options": "Customer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "certificate_of_conformance_details",
+   "fieldtype": "Table",
+   "label": "Certificate of Conformance Details",
+   "options": "Child of Outward Checklist-Certificate of Conformance"
   }
  ],
  "icon": "fa fa-calendar",
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-03-21 17:20:07.245607",
+ "modified": "2023-03-24 13:01:51.212831",
  "modified_by": "Administrator",
  "module": "Repair Management",
  "name": "Outward Checklist",
