@@ -18879,7 +18879,7 @@
     "parenttype": "Workspace"
    }
   ],
-  "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Inventory &amp; Stock</span>\",\"col\":12}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Item Shortage Summary\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Item\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stock Entry\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Delivery Note\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Purchase Receipt\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Material Request\",\"col\":3}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Masters &amp; Reports</b></span>\",\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Masters\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Stock Transaction\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Serial No &amp; Batch\",\"col\":4}}]",
+  "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Inventory &amp; Stock</span>\",\"col\":12}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Item Shortage Summary\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Item\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stock Entry\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Delivery Note\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Purchase Receipt\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Material Request\",\"col\":3}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Masters &amp; Reports</b></span>\",\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Masters\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Stock Transaction\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Serial No &amp; Batch\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}}]",
   "docstatus": 0,
   "doctype": "Workspace",
   "for_user": "",
@@ -19174,9 +19174,41 @@
     "parentfield": "links",
     "parenttype": "Workspace",
     "type": "Link"
+   },
+   {
+    "dependencies": null,
+    "hidden": 0,
+    "icon": null,
+    "is_query_report": 0,
+    "label": "Reports",
+    "link_count": 1,
+    "link_to": null,
+    "link_type": null,
+    "onboard": 0,
+    "only_for": null,
+    "parent": "Inventory & Stock",
+    "parentfield": "links",
+    "parenttype": "Workspace",
+    "type": "Card Break"
+   },
+   {
+    "dependencies": null,
+    "hidden": 0,
+    "icon": null,
+    "is_query_report": 1,
+    "label": "Item Balance (Simple)",
+    "link_count": 0,
+    "link_to": "Item Balance (Simple)",
+    "link_type": "Report",
+    "onboard": 0,
+    "only_for": null,
+    "parent": "Inventory & Stock",
+    "parentfield": "links",
+    "parenttype": "Workspace",
+    "type": "Link"
    }
   ],
-  "modified": "2023-03-22 12:13:53.713788",
+  "modified": "2023-03-27 14:58:28.942051",
   "module": null,
   "name": "Inventory & Stock",
   "parent_page": "",
@@ -21616,5 +21648,27 @@
   "sequence_id": 9.0,
   "shortcuts": [],
   "title": "DRAWINGS"
+ },
+ {
+  "charts": [],
+  "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">ERP Settings</span>\",\"col\":12}}]",
+  "docstatus": 0,
+  "doctype": "Workspace",
+  "for_user": "",
+  "hide_custom": 0,
+  "icon": null,
+  "label": "ERP Settings",
+  "links": [],
+  "modified": "2023-03-27 11:46:01.935345",
+  "module": null,
+  "name": "ERP Settings",
+  "parent_page": "",
+  "public": 1,
+  "quick_lists": [],
+  "restrict_to_domain": null,
+  "roles": [],
+  "sequence_id": 57.0,
+  "shortcuts": [],
+  "title": "ERP Settings"
  }
 ]
