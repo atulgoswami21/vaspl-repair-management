@@ -11,8 +11,8 @@ from erpnext.manufacturing.doctype.bom.bom import add_additional_cost, validate_
 from erpnext.stock.doctype.item.item import get_item_defaults
 from erpnext.stock.utils import get_bin
 from pypika import functions as fn
-from console import console
-import json
+#from console import console
+#import json
 class ServiceWorkOrder(Document):
 	def onload(self):
 		ms = frappe.get_doc("Manufacturing Settings")
