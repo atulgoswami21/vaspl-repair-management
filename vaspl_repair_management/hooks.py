@@ -7,6 +7,7 @@ app_description = "Repair Management System"
 app_email = "atul@vijatshisoftware.com"
 app_license = "MIT"
 # fixtures = ["Workspace","Custom Field","Client Script","Property Setter","Print Format"]
+fixtures = ["Client Script"]
 # Includes in <head>
 # ------------------
 
