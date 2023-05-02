@@ -11,8 +11,7 @@
   "bom_no1",
   "warehouse",
   "completed_qty",
-  "pending_qty",
-  "inprocess_qty"
+  "pending_qty"
  ],
  "fields": [
   {
@@ -55,17 +54,12 @@
    "fieldtype": "Data",
    "label": "Pending Qty",
    "read_only": 1
-  },
-  {
-   "fieldname": "inprocess_qty",
-   "fieldtype": "Data",
-   "label": "InProcess Qty"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2023-05-01 18:07:53.731355",
+ "modified": "2023-05-02 13:09:12.539505",
  "modified_by": "Administrator",
  "module": "Repair Management",
  "name": "Child of WO PP Item1",
