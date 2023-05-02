@@ -559,7 +559,7 @@ def get_items(stock_entry):
 		load_items_from_service_work_order(stock_entry)
 	stock_entry.set_scrap_items()
 	stock_entry.set_actual_qty()
-	stock_entry.update_items_for_process_loss()
+	#stock_entry.update_items_for_process_loss()
 	stock_entry.validate_customer_provided_item()
 	stock_entry.calculate_rate_and_amount(raise_error_if_no_rate=False)
 
