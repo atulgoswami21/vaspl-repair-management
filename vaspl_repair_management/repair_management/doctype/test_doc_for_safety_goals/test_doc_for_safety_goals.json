@@ -1,0 +1,31 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-04-20 13:12:04.709063",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "building"
+ ],
+ "fields": [
+  {
+   "fieldname": "building",
+   "fieldtype": "Data",
+   "label": "building"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-04-20 13:12:04.709063",
+ "modified_by": "Administrator",
+ "module": "Repair Management",
+ "name": "test doc for safety goals",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

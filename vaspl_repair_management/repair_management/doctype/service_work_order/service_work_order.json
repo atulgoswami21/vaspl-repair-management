@@ -12,8 +12,8 @@
   "naming_series",
   "status",
   "production",
+  "task_to_be_done",
   "production_item",
-  "production_items",
   "item_name",
   "image",
   "bom_no",
@@ -24,6 +24,7 @@
   "produced_qty",
   "process_loss_qty",
   "sales_order",
+  "repair_note",
   "project",
   "serial_no_and_batch_for_finished_good_section",
   "has_serial_no",
@@ -31,6 +32,8 @@
   "column_break_17",
   "serial_no",
   "batch_size",
+  "section_break_23",
+  "production_items",
   "settings_section",
   "allow_alternative_item",
   "use_multi_level_bom",
@@ -44,6 +47,11 @@
   "column_break_12",
   "fg_warehouse",
   "scrap_warehouse",
+  "service_operations_section",
+  "bom_operation",
+  "material_transfer_for_manufacture",
+  "stock_entry_after_manufacture",
+  "create_service_job_card",
   "required_items_section",
   "required_items",
   "time",
@@ -64,6 +72,11 @@
   "column_break_24",
   "corrective_operation_cost",
   "total_operating_cost",
+  "section_break_63",
+  "start_button",
+  "manufacture_button",
+  "end_button",
+  "create_stock_entry_for_material_transfer",
   "more_info",
   "description",
   "stock_uom",
@@ -217,6 +230,7 @@
   },
   {
    "allow_on_submit": 1,
+   "fetch_from": "production.sales_order",
    "fieldname": "sales_order",
    "fieldtype": "Link",
    "in_global_search": 1,
@@ -322,6 +336,7 @@
    "options": "fa fa-building"
   },
   {
+   "default": "Stores - VASPL",
    "description": "This is a location where raw materials are available.",
    "fieldname": "source_warehouse",
    "fieldtype": "Link",
@@ -329,6 +344,7 @@
    "options": "Warehouse"
   },
   {
+   "default": "Work In Progress - VASPL",
    "description": "This is a location where operations are executed.",
    "fieldname": "wip_warehouse",
    "fieldtype": "Link",
@@ -341,6 +357,7 @@
    "fieldtype": "Column Break"
   },
   {
+   "default": "Finished Goods - VASPL",
    "description": "This is a location where final product stored.",
    "fieldname": "fg_warehouse",
    "fieldtype": "Link",
@@ -583,6 +600,81 @@
    "options": "Service Work Order",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "section_break_23",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "aaaa",
+   "fieldname": "service_operations_section",
+   "fieldtype": "Section Break",
+   "label": "Service Operations"
+  },
+  {
+   "fieldname": "bom_operation",
+   "fieldtype": "Table",
+   "label": "BOM Operation",
+   "options": "BOM Operation"
+  },
+  {
+   "fieldname": "material_transfer_for_manufacture",
+   "fieldtype": "Link",
+   "label": "Material Transfer for Manufacture",
+   "options": "Stock Entry",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stock_entry_after_manufacture",
+   "fieldtype": "Link",
+   "label": "Stock Entry after Manufacture",
+   "options": "Stock Entry",
+   "read_only": 1
+  },
+  {
+   "fieldname": "create_service_job_card",
+   "fieldtype": "Link",
+   "label": "Create Service Job Card",
+   "options": "Service Job Card",
+   "read_only": 1
+  },
+  {
+   "depends_on": "aaaaa",
+   "fieldname": "section_break_63",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "start_button",
+   "fieldtype": "Button",
+   "label": "Start Button"
+  },
+  {
+   "fieldname": "manufacture_button",
+   "fieldtype": "Button",
+   "label": "Manufacture button"
+  },
+  {
+   "fieldname": "end_button",
+   "fieldtype": "Button",
+   "label": "End Button"
+  },
+  {
+   "fieldname": "create_stock_entry_for_material_transfer",
+   "fieldtype": "Data",
+   "label": "create stock entry for material transfer"
+  },
+  {
+   "fieldname": "task_to_be_done",
+   "fieldtype": "Link",
+   "label": "Task to be done ",
+   "options": "Task to be Done"
+  },
+  {
+   "depends_on": "sales_order",
+   "fetch_from": "sales_order.repair_note",
+   "fieldname": "repair_note",
+   "fieldtype": "Data",
+   "label": "Repair Note"
   }
  ],
  "icon": "fa fa-cogs",
@@ -591,14 +683,18 @@
  "links": [
   {
    "link_doctype": "CA Form",
-   "link_fieldname": "get_items_from"
+   "link_fieldname": "service_work_order"
   },
   {
    "link_doctype": "Stock Entry",
-   "link_fieldname": "work_order"
+   "link_fieldname": "service_work_order"
+  },
+  {
+   "link_doctype": "Service Job Card",
+   "link_fieldname": "service_work_order"
   }
  ],
- "modified": "2023-04-18 16:16:08.020691",
+ "modified": "2023-04-28 16:59:54.674043",
  "modified_by": "Administrator",
  "module": "Repair Management",
  "name": "Service Work Order",

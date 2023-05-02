@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:name1",
+ "creation": "2023-04-25 14:36:44.068581",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "procedure_sheet",
+  "task_to_be_done1"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "procedure_sheet",
+   "fieldtype": "Link",
+   "label": "Procedure Sheet",
+   "options": "Procedure Sheet"
+  },
+  {
+   "fieldname": "task_to_be_done1",
+   "fieldtype": "Table",
+   "label": "Task to be Done1",
+   "options": "Type of work table"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-26 12:50:51.091316",
+ "modified_by": "Administrator",
+ "module": "Repair Management",
+ "name": "Type of Work",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

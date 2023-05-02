@@ -102,13 +102,12 @@ fixtures = ["Workspace","Custom Field","Client Script","Property Setter","Print 
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-#	"*": {
-#		"on_update": "method",
-#		"on_cancel": "method",
-#		"on_trash": "method"
-#	}
-# }
+doc_events = {
+	"Stock Entry": {
+		"on_submit": "vaspl_repair_management.repair_management.doctype.service_work_order.events.handle_Onsubmit_StockEntry"
+	}
+}
+
 
 # Scheduled Tasks
 # ---------------

@@ -1,0 +1,32 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-04-26 12:15:33.297235",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "task_to_be_done"
+ ],
+ "fields": [
+  {
+   "fieldname": "task_to_be_done",
+   "fieldtype": "Link",
+   "label": "Task to be done",
+   "options": "Task to be Done"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-04-26 12:15:33.297235",
+ "modified_by": "Administrator",
+ "module": "Repair Management",
+ "name": "Type of work table",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
